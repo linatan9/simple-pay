@@ -1,0 +1,44 @@
+@use '~@epam/assets/scss/loveship-colors' as *;
+
+.rateCardHeader {
+  padding: 0;
+}
+
+.rateCardPanel {
+  border: 1px solid $night300;
+  margin-bottom: 4px;
+}
+
+.rateCardContent {
+  padding: 4px 12px;
+}
+
+.modalMobile {
+  min-width: calc(100% - 24px) !important;
+  align-self: start;
+  margin-top: 72px;
+  border-radius: 6px !important;
+}
+
+.modalContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, auto);
+  gap: 6px 12px;
+  margin: 12px 30px;
+}
+
+.textWithoutTopPadding {
+  padding-top: 0;
+}
+
+.statusModal > div{
+  min-height: 27px;
+  :first-child{
+    margin-bottom: 3px;
+  }
+
+  :last-child {
+    padding-top: 0;
+  }
+}
